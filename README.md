@@ -18,6 +18,9 @@ npm start
 npm test
 ```
 ###
-
- Color palettes chosed by google material design:
+ Color palettes:
  https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors
+
+###
+ Text-Font: Oswald
+ https://fonts.google.com/specimen/Oswald

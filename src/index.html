@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <link
       rel="stylesheet"
@@ -21,14 +27,14 @@
     <main>
       <section id="clock">
         <x-clock>
-          <time>00:00:00</time>
+          <time style="font-size:10vw;">00:00:00</time>
         </x-clock>
       </section>
       <section id="alarm">
         <x-alarm>
           <template>
             <section class="alarms">
-              <input type="time" min="00:00" max="23:59" step="1" />
+              <input style="font-size:3vw;" type="time" min="00:00" max="23:59" step="1" />
               <section class="controls">
                 <button class="start material-icons">alarm_on</button>
                 <button class="pause material-icons">alarm_off</button>
@@ -44,7 +50,7 @@
       </section>
       <section id="stopwatch">
         <x-stopwatch>
-          <time datetime="PT0S">00:00:00.00</time>
+          <time style="font-size:10vw;" datetime="PT0S">00:00:00.00</time>
           <section class="controls">
             <button class="start material-icons">timer</button>
             <button class="pause material-icons">timer_off</button>
@@ -54,7 +60,7 @@
       </section>
       <section id="timer">
         <x-timer>
-          <time datetime="PT0S">00:00:00.00</time>
+          <time style="font-size:10vw;" datetime="PT0S">00:00:00.00</time>
           <section class="items">
             <input type="time" min="00:00" max="23:59" step="1" value="00:03" />
             <input type="time" min="00:00" max="23:59" step="1" value="00:01" />

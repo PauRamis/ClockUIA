@@ -1,15 +1,7 @@
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  height: 100vh;
-}
-
 nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
 }
 
@@ -35,10 +27,6 @@ nav > ul > li a:hover {
   background-color: #111;
 }
 
-main {
-  display: flex;
-}
-
 main > section:not(:target) {
   display: none;
 }
@@ -49,18 +37,28 @@ main > section:not(:target) {
     float: none;
   }
 }
+
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
   background-color: #0080ff;
 }
+
 main {
+  display: flex;
   background-color: #00FFFF;
   color: #0000FF;
-  margin-top: 1%;
-  margin-left: 4%;
-  margin-right: 4%;
+  font-family: 'Oswald', sans-serif;
+  margin: 4%;
+  padding: 4%;
   display: flex;
-  height: 300px;
   justify-content: center;
   align-items: center;
 }
-
+/*
+.material-icons section:target {
+  display: none;
+}
+*/
