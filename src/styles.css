@@ -43,14 +43,6 @@ main > section:not(:target) {
   display: none;
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
   nav li.right,
   nav li {
@@ -58,10 +50,11 @@ main > section:not(:target) {
   }
 }
 body {
-  background-color: DodgerBlue;
+  background-color: #0080ff;
 }
 main {
-  background-color: aliceblue;
+  background-color: #00FFFF;
+  color: #0000FF;
   margin-top: 1%;
   margin-left: 4%;
   margin-right: 4%;

@@ -17,3 +17,7 @@ npm start
 ```bash
 npm test
 ```
+###
+
+ Color palettes chosed by google material design:
+ https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors
