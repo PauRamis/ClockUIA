@@ -57,7 +57,8 @@ main {
   justify-content: center;
   align-items: center;
 }
-
+/*Stopwatch*/
+/*Before*/
 x-stopwatch[start-time=""] .start{
   display: inline-block !important;
 }
@@ -65,6 +66,7 @@ x-stopwatch[start-time=""] .pause{
   display: none !important;
 }
 
+/*Started*/
 x-stopwatch:not(paused) .start{
   display: none !important;
 }
@@ -72,9 +74,50 @@ x-stopwatch:not(paused) .pause{
   display: inline-block !important;
 }
 
+/*Paused*/
 x-stopwatch[paused] .start{
   display: inline-block !important;
 }
 x-stopwatch[paused] .pause{
+  display: none !important;
+}
+
+/*Timer*/
+/*Before*/
+x-timer[start-time=""] .start{
+  display: inline-block !important;
+}
+x-timer[start-time=""] .pause{
+  display: none !important;
+}
+
+/*Started*/
+x-timer:not(paused) .start{
+  display: none !important;
+}
+x-timer:not(paused) .pause{
+  display: inline-block !important;
+}
+
+/*Paused*/
+x-timer[paused] .start{
+  display: inline-block !important;
+}
+x-timer[paused] .pause{
+  display: none !important;
+}
+
+/*loop*/
+x-timer[loop=""] .loop{
+  display: none !important;
+}
+x-timer:not(loop) .loop{
+  display: inline-block !important;
+}
+
+x-timer[loop=""] .no-loop{
+  display: inline-block !important;
+}
+x-timer:not(loop) .no-loop{
   display: none !important;
 }
