@@ -57,8 +57,17 @@ main {
   justify-content: center;
   align-items: center;
 }
-/*
-.material-icons section:target {
-  display: none;
+
+x-stopwatch:not(paused) .start{
+  display: none !important;
 }
-*/
+x-stopwatch:not(paused) .pause{
+  display: inline-block !important;
+}
+
+x-stopwatch[paused] .start{
+  display: inline-block !important;
+}
+x-stopwatch[paused] .pause{
+  display: none !important;
+}
