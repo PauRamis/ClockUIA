@@ -7,3 +7,9 @@ customElements.define("x-alarm", Alarm);
 customElements.define("x-clock", Clock);
 customElements.define("x-stopwatch", Stopwatch);
 customElements.define("x-timer", Timer);
+
+const btn = document.querySelector(".btn-toggle");
+
+btn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-theme");
+});

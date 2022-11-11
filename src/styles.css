@@ -2,7 +2,8 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: white;
+  font-size: 150%;
 }
 
 nav > ul {
@@ -19,12 +20,12 @@ nav > ul > li {
 
 nav > ul > li a {
   display: block;
-  color: white;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;}
 
 nav > ul > li a:hover {
-  background-color: #111;
+  background-color: rgb(128, 125, 125);
 }
 
 main > section:not(:target) {
@@ -46,6 +47,27 @@ body {
   background-color: #0080ff;
 }
 
+body.dark-theme {
+  background-color: #000050;
+
+}
+
+body.dark-theme main {
+  background-color: #000808;
+}
+
+body.dark-theme nav {
+  background-color: #333;
+}
+
+body.dark-theme nav > ul > li a {
+  color: white;
+}
+
+body.dark-theme nav > ul > li a:hover {
+  background-color: rgb(20, 20, 20);
+}
+
 main {
   display: flex;
   background-color: #00FFFF;
@@ -57,6 +79,11 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.material-symbols-outlined {
+  font-size: 50 !important;
+}
+
 /*Stopwatch*/
 /*Before*/
 x-stopwatch[start-time=""] .start{
